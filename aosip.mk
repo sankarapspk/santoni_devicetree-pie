@@ -17,21 +17,14 @@
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
 # Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4
-PRODUCT_NAME := bootleg_santoni
+PRODUCT_NAME := aosip_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-
-# Build  Type
-BOOTLEGGERS_BUILD_TYPE := HomeMade@PavanKatari
-DEVICE_MAINTAINERS="PavanKatari"
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.bootleg.maintainer="pavankatari"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
